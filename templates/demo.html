@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<title>Add a new image</title>
+<body>
+  <form action = "{{ url_for('addrec') }}" method = "POST" enctype="multipart/form-data">
+         <h3>Enter Image to detect it's Nudity</h3>
+         Name<br>
+         <input type = "text" name = "nm" /><br>
+
+         Image_URL<br>
+         <textarea name = "image_url" ></textarea><br>
+  
+         <div class="form-group">
+          <label>Select image</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image">Select image...</label>
+          </div>
+        </div>
+        <br>
+        <input type = "submit" value = "submit" /><br>
+
+  </form>
+
+
+</body>
+</html>

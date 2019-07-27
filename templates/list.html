@@ -1,0 +1,23 @@
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ImageURL</td>
+            <td>ImageTimestamp</td>
+            <td>ImageData</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["image_name"]}}</td>
+               <td>{{row["image_url"]}}</td>
+               <td> {{ row["image_timestamp"]}}</td>
+               <td>{{row['image_data']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>

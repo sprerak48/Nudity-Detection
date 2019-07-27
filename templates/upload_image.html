@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<title>Image upload for Nudity Detection</title>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Upload an image</h1>
+      <hr>
+      <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>Select image</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image" accept="image/*" multiple>
+            <label class="custom-file-label" for="image">Select image...</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" value="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
